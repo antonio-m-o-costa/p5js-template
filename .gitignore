@@ -1,0 +1,5 @@
+# local libraries
+p5/
+
+# user settings
+.vscode/
