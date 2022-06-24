@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: none;
+}
+
+canvas {
+    display: block;
+}
+
+.item-a {
+    grid-area: header;
+    align-self: end;
+}
+
+.item-b {
+    grid-area: main;
+    align-self: center;
+}
+
+.item-c {
+    grid-area: footer;
+    align-self: start;
+}
+
+.container {
+    display: grid;
+    /* inline-grid */
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+        ". header ."
+        ". main ."
+        ". footer .";
+    gap: 5px;
+    width: 100%;
+    padding: 15px;
+}
